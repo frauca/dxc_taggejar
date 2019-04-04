@@ -39,8 +39,33 @@ User 2 start working in the project
 ```shell
 git clone https://github.com/frauca/dxc_taggejar.git
 cd dxc_taggejar
+git config user.name "roger2"
+git config user.email "rfrauca@dxc.com"
 git branch feature/user2
 git checkout feature/user2
 git add .
 git commit -m "I have make something diferent from user 1"
 ```
+
+User2 finish before the feature and merge to master
+
+### Second user ends before its feature and commit to master
+
+Look for changes on master
+
+```shell
+git checkout master
+git pull origin
+git checkout feature/user2
+git merge master
+```
+
+Easy no changes.
+```shell
+git checkout master
+git merge feature/user2
+```
+
+Another easy. A fast fordward merge.
+
+
