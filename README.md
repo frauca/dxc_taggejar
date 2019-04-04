@@ -68,4 +68,12 @@ git merge feature/user2
 
 Another easy. A fast fordward merge.
 
+upload and remove branch
+
+```shell
+git push origin master
+git branch -d feature/user2
+```
+
+
 
