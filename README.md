@@ -59,6 +59,7 @@ git checkout master
 git pull
 ```
 
+
 Pending commits. Do not let make the sinc with remote until changes are get
 
 
@@ -66,6 +67,11 @@ Pending commits. Do not let make the sinc with remote until changes are get
 git checkout feature/user1
 git add .
 git commit -m "user 1 make changes"
+```
+Try again the master checkout and the merge
+
+```shell
+git checkout master
 git pull
 ```
 
