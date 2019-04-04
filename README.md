@@ -37,10 +37,54 @@ git add .
 git commit -m "make origin newr"
 git push -u origin master
 ```
+Note that secondary is now on a newer version of origin
 
 ### Second person starts working on the project
 
-Now we will work on features each one will work on its featrue
+User 2 start working in the project
+
+```shell
+git clone https://github.com/frauca/dxc_taggejar.git
+cd dxc_taggejar
+git config user.name "roger2"
+git config user.email "rfrauca@dxc.com"
+git branch feature/user2
+git checkout feature/user2
+git add .
+git commit -m "I have make something diferent from user 1"
+```
+
+User2 finish before the feature and merge to master
+
+### Second user ends before its feature and commit to master
+
+Look for changes on master
+
+```shell
+git checkout master
+git pull origin
+git checkout feature/user2
+git merge master
+```
+
+Easy no changes.
+```shell
+git checkout master
+git merge feature/user2
+```
+
+Another easy. A fast fordward merge.
+
+upload and remove branch
+
+```shell
+git push origin master
+git branch -d feature/user2
+```
+
+### Second person starts working on the project
+
+User 1 is now on a previus release and a merge will be needed
 
 User 1
 
