@@ -31,3 +31,16 @@ git push -u secondary master
 ```
 
 Note that secondary is now on a newer version of origin
+
+### Second person starts working on the project
+
+User 2 start working in the project
+
+```shell
+git clone https://github.com/frauca/dxc_taggejar.git
+cd dxc_taggejar
+git branch feature/user2
+git checkout feature/user2
+git add .
+git commit -m "I have make something diferent from user 1"
+```
