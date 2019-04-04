@@ -54,14 +54,7 @@ git commit -m "This text will not be present on user 2"
 
 User 1 will merge but it will have problems as the other user has make changes
 
-```shell
-git checkout master
-git pull
-```
-
-
-Pending commits. Do not let make the sinc with remote until changes are get
-
+Make changes and commit htem
 
 ```shell
 git checkout feature/user1
@@ -74,10 +67,19 @@ Try again the master checkout and the merge
 git checkout master
 git pull
 ```
+No problems here
 
-We resolve the errors and then make the commit and close the branch
+```shell
+git checkout feature/user1
+git merge master
+```
+
+resolve problems commit and hten merge an upload
 
 ```shell
 git add .
-git commit -m "All problemes resolved"
+git commit -m "resolve conflicts"
+git checkout master
+git merge feature/user1
+git branch -d feature/user1
 ```
