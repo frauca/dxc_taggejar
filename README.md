@@ -127,3 +127,8 @@ git checkout master
 git merge feature/user1
 git branch -d feature/user1
 ```
+### Modify on a report and push to server
+
+git add .
+git commit -m "send to server"
+git push origin master
