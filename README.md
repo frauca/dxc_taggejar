@@ -132,3 +132,7 @@ git branch -d feature/user1
 git add .
 git commit -m "send to server"
 git push origin master
+
+# Investigation for branches
+
+This will make a new branch on git hub
