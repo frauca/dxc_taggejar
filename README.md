@@ -135,4 +135,6 @@ git push origin master
 
 # Diferent branches 
 
-See the behaivor on dierent branches diferent merges
+See the behaivor on dierent branches diferent merges.
+
+Changes on this one but not on the base one
