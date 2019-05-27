@@ -132,3 +132,7 @@ git branch -d feature/user1
 git add .
 git commit -m "send to server"
 git push origin master
+
+# Diferent branches 
+
+See the behaivor on dierent branches diferent merges
