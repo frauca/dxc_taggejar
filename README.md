@@ -131,8 +131,4 @@ git branch -d feature/user1
 
 git add .
 git commit -m "send to server"
-git push origin master
-
-# Diferent branches 
-
-See the behaivor on dierent branches diferent merges
+# Diferent branches This will make a new branch on git hubSee the behaivor on dierent branches diferent merges
